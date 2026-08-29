@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Soul Seva — Together we can make a difference. Supporting people, children, elders and animals in need.">
+<title>Soul Seva | Together We Can Make a Difference</title>
+<style>
+:root{
+  --green:#176b52;
+  --green-dark:#0d4b3a;
+  --gold:#d7a84b;
+  --cream:#fffaf0;
+  --text:#18332b;
+  --muted:#61736c;
+  --white:#fff;
+  --shadow:0 14px 40px rgba(13,75,58,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid #e9eee9}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:25px;font-weight:800;color:var(--green)}
+.logo span{color:var(--gold)}
+nav{display:flex;gap:26px;align-items:center}
+nav a{font-size:14px;font-weight:700;color:#39554c}
+nav a:hover{color:var(--green)}
+.btn{display:inline-block;border:0;border-radius:999px;padding:13px 22px;font-weight:800;cursor:pointer}
+.btn-primary{background:var(--green);color:#fff}
+.btn-primary:hover{background:var(--green-dark)}
+.btn-outline{border:1px solid var(--green);color:var(--green);background:#fff}
+.hero{background:linear-gradient(135deg,#f3fbf6 0%,#fffaf0 100%);padding:90px 0 80px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}
+.badge{display:inline-block;background:#e4f2eb;color:var(--green);padding:7px 13px;border-radius:30px;font-size:13px;font-weight:800;margin-bottom:18px}
+h1{font-size:clamp(42px,6vw,70px);line-height:1.02;letter-spacing:-2px;margin-bottom:22px}
+h1 span{color:var(--green)}
+.hero p{font-size:18px;color:var(--muted);max-width:600px;margin-bottom:30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-card{background:var(--green);color:#fff;border-radius:30px;padding:42px;box-shadow:var(--shadow);min-height:360px;display:flex;flex-direction:column;justify-content:center}
+.hero-card .heart{font-size:62px;margin-bottom:12px}
+.hero-card h2{font-size:32px;line-height:1.15;margin-bottom:12px}
+.hero-card p{color:#dcece5;margin:0}
+section{padding:85px 0}
+.section-head{text-align:center;max-width:700px;margin:0 auto 45px}
+.section-head h2{font-size:40px;line-height:1.15;margin-bottom:12px}
+.section-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border:1px solid #e8eee9;border-radius:22px;padding:30px;box-shadow:0 8px 25px rgba(0,0,0,.04)}
+.icon{width:54px;height:54px;border-radius:16px;background:#edf7f1;display:grid;place-items:center;font-size:26px;margin-bottom:18px}
+.card h3{font-size:21px;margin-bottom:8px}
+.card p{color:var(--muted)}
+.mission{background:var(--cream)}
+.mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.mission-box{background:#fff;border-radius:28px;padding:38px;box-shadow:var(--shadow)}
+.mission-box h3{font-size:28px;margin-bottom:14px}
+.list{list-style:none;margin-top:20px}
+.list li{margin:12px 0;color:#466158}
+.list li::before{content:"✓";color:var(--green);font-weight:900;margin-right:10px}
+.donate{background:var(--green-dark);color:#fff}
+.donate .section-head p{color:#cfe0d9}
+.donate-box{background:#fff;color:var(--text);border-radius:28px;padding:38px;max-width:720px;margin:auto;box-shadow:var(--shadow)}
+.pay-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px}
+.pay-item{border:1px solid #e7ece8;border-radius:18px;padding:20px}
+.pay-item small{display:block;color:var(--muted);margin-bottom:5px}
+.pay-item strong{font-size:18px;word-break:break-word}
+.qr-placeholder{min-height:190px;border:2px dashed #c9d8d0;border-radius:18px;display:grid;place-items:center;text-align:center;color:var(--muted);padding:20px;margin-top:22px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.contact-card{border-radius:22px;background:#f6faf7;padding:30px}
+footer{background:#092d23;color:#cfe0d9;padding:28px 0}
+.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer strong{color:#fff}
+@media(max-width:800px){
+ nav{display:none}
+ .hero{padding:65px 0}
+ .hero-grid,.mission-grid,.contact-grid{grid-template-columns:1fr}
+ .cards{grid-template-columns:1fr}
+ .pay-grid{grid-template-columns:1fr}
+ section{padding:65px 0}
+ h1{font-size:48px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#home">Soul <span>Seva</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#mission">Mission</a>
+      <a href="#donate">Donate</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary" href="#donate">Donate Now</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="badge">🤝 Serving with compassion</div>
+      <h1>Together We Can <span>Make a Difference.</span></h1>
+      <p>Soul Seva is a service initiative created to support people, children, elders and animals who need a helping hand.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#donate">Donate Now</a>
+        <a class="btn btn-outline" href="#about">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="heart">♥</div>
+      <h2>A little kindness can change a life.</h2>
+      <p>Your support can help turn compassion into food, care, education and hope.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-head">
+      <h2>About Soul Seva</h2>
+      <p>We believe that meaningful service begins with empathy and grows through collective action.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="icon">❤️</div><h3>Compassion</h3><p>We stand beside those facing difficult circumstances and treat every person with dignity.</p></div>
+      <div class="card"><div class="icon">🌱</div><h3>Positive Impact</h3><p>We focus on practical support that can create a meaningful difference in everyday life.</p></div>
+      <div class="card"><div class="icon">🤝</div><h3>Togetherness</h3><p>Volunteers, donors and well-wishers come together to turn kindness into action.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="mission" id="mission">
+  <div class="container mission-grid">
+    <div>
+      <div class="section-head" style="text-align:left;margin:0">
+        <h2>Our Mission</h2>
+        <p>To make help accessible, humane and purposeful for those who need it most.</p>
+      </div>
+      <ul class="list">
+        <li>Support families and individuals in need</li>
+        <li>Help children with essential needs and education</li>
+        <li>Support elderly and vulnerable people</li>
+        <li>Extend care and kindness to animals</li>
+      </ul>
+    </div>
+    <div class="mission-box">
+      <h3>Why Donate?</h3>
+      <p>Every contribution, big or small, can become a meal, medicine, school support, shelter or a moment of hope.</p>
+      <br>
+      <p><strong>Service to Humanity is Service to God.</strong></p>
+    </div>
+  </div>
+</section>
+
+<section class="donate" id="donate">
+  <div class="container">
+    <div class="section-head">
+      <h2>Support Soul Seva</h2>
+      <p>Your contribution helps us continue serving people and animals in need.</p>
+    </div>
+    <div class="donate-box">
+      <h3>Donate via UPI</h3>
+      <p style="color:#61736c;margin-top:6px">Replace the sample details below with your actual payment information.</p>
+      <div class="pay-grid">
+        <div class="pay-item"><small>UPI ID</small><strong>YOUR-UPI-ID@upi</strong></div>
+        <div class="pay-item"><small>Payment Name</small><strong>Soul Seva</strong></div>
+      </div>
+      <div class="qr-placeholder">📱<br><strong>QR Code Area</strong><br>Upload your UPI QR code here</div>
+      <div style="text-align:center;margin-top:22px">
+        <a class="btn btn-primary" href="#">Pay via UPI</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-head">
+      <h2>Get in Touch</h2>
+      <p>Want to volunteer, collaborate or learn more about Soul Seva?</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card"><strong>📞 Phone</strong><p style="margin-top:7px">+91 XXXXXXXXXX</p></div>
+      <div class="contact-card"><strong>✉️ Email</strong><p style="margin-top:7px">your-email@example.com</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <div><strong>Soul Seva</strong><br>Serving with compassion.</div>
+    <div>© 2026 Soul Seva. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
