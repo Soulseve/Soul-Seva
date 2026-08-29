@@ -3,199 +3,105 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Soul Seva — Together we can make a difference. Supporting people, children, elders and animals in need.">
-<title>Soul Seva | Together We Can Make a Difference</title>
+<meta name="description" content="Soul Seva Foundation — Serve with Soul, Change a Life.">
+<title>Soul Seva Foundation | Serve with Soul, Change a Life</title>
 <style>
-:root{
-  --green:#176b52;
-  --green-dark:#0d4b3a;
-  --gold:#d7a84b;
-  --cream:#fffaf0;
-  --text:#18332b;
-  --muted:#61736c;
-  --white:#fff;
-  --shadow:0 14px 40px rgba(13,75,58,.10);
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff;line-height:1.6}
-a{text-decoration:none;color:inherit}
+:root{--navy:#102746;--orange:#d87819;--green:#397b45;--cream:#fffaf2;--ink:#20352f;--muted:#687870}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.65}
 .container{width:min(1120px,92%);margin:auto}
-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid #e9eee9}
-.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.logo{font-size:25px;font-weight:800;color:var(--green)}
-.logo span{color:var(--gold)}
-nav{display:flex;gap:26px;align-items:center}
-nav a{font-size:14px;font-weight:700;color:#39554c}
-nav a:hover{color:var(--green)}
-.btn{display:inline-block;border:0;border-radius:999px;padding:13px 22px;font-weight:800;cursor:pointer}
-.btn-primary{background:var(--green);color:#fff}
-.btn-primary:hover{background:var(--green-dark)}
-.btn-outline{border:1px solid var(--green);color:var(--green);background:#fff}
-.hero{background:linear-gradient(135deg,#f3fbf6 0%,#fffaf0 100%);padding:90px 0 80px}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}
-.badge{display:inline-block;background:#e4f2eb;color:var(--green);padding:7px 13px;border-radius:30px;font-size:13px;font-weight:800;margin-bottom:18px}
-h1{font-size:clamp(42px,6vw,70px);line-height:1.02;letter-spacing:-2px;margin-bottom:22px}
-h1 span{color:var(--green)}
-.hero p{font-size:18px;color:var(--muted);max-width:600px;margin-bottom:30px}
-.actions{display:flex;gap:12px;flex-wrap:wrap}
-.hero-card{background:var(--green);color:#fff;border-radius:30px;padding:42px;box-shadow:var(--shadow);min-height:360px;display:flex;flex-direction:column;justify-content:center}
-.hero-card .heart{font-size:62px;margin-bottom:12px}
-.hero-card h2{font-size:32px;line-height:1.15;margin-bottom:12px}
-.hero-card p{color:#dcece5;margin:0}
-section{padding:85px 0}
-.section-head{text-align:center;max-width:700px;margin:0 auto 45px}
-.section-head h2{font-size:40px;line-height:1.15;margin-bottom:12px}
-.section-head p{color:var(--muted)}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{background:#fff;border:1px solid #e8eee9;border-radius:22px;padding:30px;box-shadow:0 8px 25px rgba(0,0,0,.04)}
-.icon{width:54px;height:54px;border-radius:16px;background:#edf7f1;display:grid;place-items:center;font-size:26px;margin-bottom:18px}
-.card h3{font-size:21px;margin-bottom:8px}
-.card p{color:var(--muted)}
-.mission{background:var(--cream)}
-.mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-.mission-box{background:#fff;border-radius:28px;padding:38px;box-shadow:var(--shadow)}
-.mission-box h3{font-size:28px;margin-bottom:14px}
-.list{list-style:none;margin-top:20px}
-.list li{margin:12px 0;color:#466158}
-.list li::before{content:"✓";color:var(--green);font-weight:900;margin-right:10px}
-.donate{background:var(--green-dark);color:#fff}
-.donate .section-head p{color:#cfe0d9}
-.donate-box{background:#fff;color:var(--text);border-radius:28px;padding:38px;max-width:720px;margin:auto;box-shadow:var(--shadow)}
-.pay-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px}
-.pay-item{border:1px solid #e7ece8;border-radius:18px;padding:20px}
-.pay-item small{display:block;color:var(--muted);margin-bottom:5px}
-.pay-item strong{font-size:18px;word-break:break-word}
-.qr-placeholder{min-height:190px;border:2px dashed #c9d8d0;border-radius:18px;display:grid;place-items:center;text-align:center;color:var(--muted);padding:20px;margin-top:22px}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.contact-card{border-radius:22px;background:#f6faf7;padding:30px}
-footer{background:#092d23;color:#cfe0d9;padding:28px 0}
-.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-footer strong{color:#fff}
-@media(max-width:800px){
- nav{display:none}
- .hero{padding:65px 0}
- .hero-grid,.mission-grid,.contact-grid{grid-template-columns:1fr}
- .cards{grid-template-columns:1fr}
- .pay-grid{grid-template-columns:1fr}
- section{padding:65px 0}
- h1{font-size:48px}
-}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);border-bottom:1px solid #e8ece8}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--navy);font-size:21px}
+.brand img{width:45px;height:45px;object-fit:cover;border-radius:50%}
+nav{display:flex;gap:24px}nav a{font-size:14px;font-weight:800;color:#40564e}
+nav a:hover{color:var(--orange)}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;font-weight:800;text-decoration:none}
+.primary{background:var(--orange);color:#fff}.primary:hover{background:#b85f0d}
+.hero{background:var(--cream);padding:28px 0 70px}
+.hero-banner{width:100%;display:block;border-radius:24px;box-shadow:0 18px 45px rgba(16,39,70,.12);margin-bottom:35px}
+.hero-copy{text-align:center;max-width:800px;margin:auto}
+.hero-copy h1{font-size:clamp(38px,6vw,64px);line-height:1.05;color:var(--navy);margin-bottom:15px}
+.hero-copy h1 span{color:var(--orange)}
+.hero-copy p{font-size:18px;color:var(--muted);margin-bottom:25px}
+section{padding:82px 0}.head{text-align:center;max-width:720px;margin:0 auto 42px}.head h2{font-size:40px;line-height:1.15;color:var(--navy);margin-bottom:10px}.head p{color:var(--muted)}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px;align-items:center}
+.logo-card{background:var(--cream);border-radius:28px;padding:25px;text-align:center}.logo-card img{width:100%;max-width:360px;border-radius:18px}
+.about-text h3{font-size:28px;color:var(--navy);margin-bottom:12px}.about-text p{color:var(--muted);margin-bottom:14px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{padding:25px;border:1px solid #e5ebe7;border-radius:20px;background:#fff;box-shadow:0 7px 24px rgba(0,0,0,.035)}
+.icon{font-size:29px;margin-bottom:10px}.card h3{font-size:19px;color:var(--navy);margin-bottom:7px}.card p{font-size:14px;color:var(--muted)}
+.mission{background:#f5faf6}.mission-box{max-width:850px;margin:auto;background:#fff;border-radius:26px;padding:38px;box-shadow:0 14px 38px rgba(0,0,0,.06)}
+.mission-box ul{list-style:none;margin-top:20px}.mission-box li{margin:12px 0;color:#52675f}.mission-box li:before{content:"✓";color:var(--green);font-weight:900;margin-right:10px}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.story img{width:100%;height:520px;object-fit:cover;border-radius:28px;box-shadow:0 15px 40px rgba(0,0,0,.10)}.story h2{font-size:40px;line-height:1.15;color:var(--navy);margin-bottom:14px}.story p{color:var(--muted);margin-bottom:16px}
+.donate{background:var(--navy);color:#fff}.donate .head h2{color:#fff}.donate .head p{color:#d5e0ea}.donate-box{background:#fff;color:var(--ink);max-width:720px;margin:auto;border-radius:28px;padding:36px;text-align:center}.donate-box h3{font-size:27px;color:var(--navy)}.placeholder{margin-top:18px;border:2px dashed #c9d6d0;border-radius:18px;padding:25px;color:var(--muted)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact{background:var(--cream);padding:28px;border-radius:22px}.contact h3{color:var(--navy);margin-bottom:5px}.contact p{color:var(--muted)}
+footer{background:#091d34;color:#ced9e3;padding:28px 0}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot strong{color:#fff}
+@media(max-width:850px){nav{display:none}.about-grid,.story,.contact-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.story img{height:420px}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}.hero{padding-top:18px}.hero-banner{border-radius:14px}.head h2,.story h2{font-size:33px}}
 </style>
 </head>
 <body>
 
-<header>
-  <div class="container nav">
-    <a class="logo" href="#home">Soul <span>Seva</span></a>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#mission">Mission</a>
-      <a href="#donate">Donate</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="btn btn-primary" href="#donate">Donate Now</a>
-  </div>
-</header>
+<header><div class="container nav">
+<a class="brand" href="#home"><img src="soul-seva-logo.jpg" alt="Soul Seva Foundation logo"><span>Soul Seva Foundation</span></a>
+<nav><a href="#about">About</a><a href="#work">Our Work</a><a href="#mission">Mission</a><a href="#donate">Donate</a><a href="#contact">Contact</a></nav>
+<a class="btn primary" href="#donate">Donate</a>
+</div></header>
 
-<main>
-<section class="hero" id="home">
-  <div class="container hero-grid">
-    <div>
-      <div class="badge">🤝 Serving with compassion</div>
-      <h1>Together We Can <span>Make a Difference.</span></h1>
-      <p>Soul Seva is a service initiative created to support people, children, elders and animals who need a helping hand.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="#donate">Donate Now</a>
-        <a class="btn btn-outline" href="#about">Learn More</a>
-      </div>
-    </div>
-    <div class="hero-card">
-      <div class="heart">♥</div>
-      <h2>A little kindness can change a life.</h2>
-      <p>Your support can help turn compassion into food, care, education and hope.</p>
-    </div>
-  </div>
-</section>
+<section class="hero" id="home"><div class="container">
+<img class="hero-banner" src="soul-seva-banner.png" alt="Soul Seva Foundation — Together We Can Make a Difference">
+<div class="hero-copy">
+<h1>Serve with Soul, <span>Change a Life.</span></h1>
+<p>When kindness becomes action, even a small helping hand can bring food, education, care and hope to someone in need.</p>
+<a class="btn primary" href="#donate">Support Our Mission</a>
+</div></div></section>
 
-<section id="about">
-  <div class="container">
-    <div class="section-head">
-      <h2>About Soul Seva</h2>
-      <p>We believe that meaningful service begins with empathy and grows through collective action.</p>
-    </div>
-    <div class="cards">
-      <div class="card"><div class="icon">❤️</div><h3>Compassion</h3><p>We stand beside those facing difficult circumstances and treat every person with dignity.</p></div>
-      <div class="card"><div class="icon">🌱</div><h3>Positive Impact</h3><p>We focus on practical support that can create a meaningful difference in everyday life.</p></div>
-      <div class="card"><div class="icon">🤝</div><h3>Togetherness</h3><p>Volunteers, donors and well-wishers come together to turn kindness into action.</p></div>
-    </div>
-  </div>
-</section>
+<section id="about"><div class="container">
+<div class="head"><h2>About Soul Seva</h2><p>A heart-led initiative built around compassion, dignity and meaningful service.</p></div>
+<div class="about-grid">
+<div class="logo-card"><img src="soul-seva-logo.jpg" alt="Soul Seva Foundation logo"></div>
+<div class="about-text"><h3>Together, we can make a difference.</h3>
+<p>Soul Seva Foundation believes that every person deserves care, respect and an opportunity to live with dignity.</p>
+<p>Our aim is simple: to stand beside those who need support and to turn kindness into practical help.</p>
+<p><strong>Service to Humanity is Service to God.</strong></p></div>
+</div></div></section>
 
-<section class="mission" id="mission">
-  <div class="container mission-grid">
-    <div>
-      <div class="section-head" style="text-align:left;margin:0">
-        <h2>Our Mission</h2>
-        <p>To make help accessible, humane and purposeful for those who need it most.</p>
-      </div>
-      <ul class="list">
-        <li>Support families and individuals in need</li>
-        <li>Help children with essential needs and education</li>
-        <li>Support elderly and vulnerable people</li>
-        <li>Extend care and kindness to animals</li>
-      </ul>
-    </div>
-    <div class="mission-box">
-      <h3>Why Donate?</h3>
-      <p>Every contribution, big or small, can become a meal, medicine, school support, shelter or a moment of hope.</p>
-      <br>
-      <p><strong>Service to Humanity is Service to God.</strong></p>
-    </div>
-  </div>
-</section>
+<section id="work" style="background:#fff"><div class="container">
+<div class="head"><h2>What We Stand For</h2><p>Our service is guided by four simple values.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">🤲</div><h3>Helping the Needy</h3><p>Standing with families and individuals during difficult times.</p></div>
+<div class="card"><div class="icon">📚</div><h3>Education for All</h3><p>Encouraging learning and supporting children who need a helping hand.</p></div>
+<div class="card"><div class="icon">🍲</div><h3>Food Distribution</h3><p>Sharing essential food and nourishment with people in need.</p></div>
+<div class="card"><div class="icon">❤️</div><h3>Social Welfare</h3><p>Creating a culture of care, dignity and community support.</p></div>
+</div></div></section>
 
-<section class="donate" id="donate">
-  <div class="container">
-    <div class="section-head">
-      <h2>Support Soul Seva</h2>
-      <p>Your contribution helps us continue serving people and animals in need.</p>
-    </div>
-    <div class="donate-box">
-      <h3>Donate via UPI</h3>
-      <p style="color:#61736c;margin-top:6px">Replace the sample details below with your actual payment information.</p>
-      <div class="pay-grid">
-        <div class="pay-item"><small>UPI ID</small><strong>YOUR-UPI-ID@upi</strong></div>
-        <div class="pay-item"><small>Payment Name</small><strong>Soul Seva</strong></div>
-      </div>
-      <div class="qr-placeholder">📱<br><strong>QR Code Area</strong><br>Upload your UPI QR code here</div>
-      <div style="text-align:center;margin-top:22px">
-        <a class="btn btn-primary" href="#">Pay via UPI</a>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="mission" id="mission"><div class="container">
+<div class="head"><h2>Our Mission</h2><p>To serve with compassion and create positive change, one life at a time.</p></div>
+<div class="mission-box"><ul>
+<li>Support vulnerable people and families</li>
+<li>Help children with education and essential needs</li>
+<li>Provide food and basic support where needed</li>
+<li>Promote kindness, dignity and social responsibility</li>
+<li>Extend compassion and care towards animals</li>
+</ul></div></div></section>
 
-<section id="contact">
-  <div class="container">
-    <div class="section-head">
-      <h2>Get in Touch</h2>
-      <p>Want to volunteer, collaborate or learn more about Soul Seva?</p>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-card"><strong>📞 Phone</strong><p style="margin-top:7px">+91 XXXXXXXXXX</p></div>
-      <div class="contact-card"><strong>✉️ Email</strong><p style="margin-top:7px">your-email@example.com</p></div>
-    </div>
-  </div>
-</section>
-</main>
+<section><div class="container story">
+<img src="soul-seva-service.jpg" alt="Soul Seva service activity">
+<div><h2>Kindness Is Not Small.</h2>
+<p>A meal can bring relief. Education can open a future. A helping hand can restore hope.</p>
+<p>With the support of donors, volunteers and well-wishers, Soul Seva aims to turn these small acts of kindness into lasting positive impact.</p>
+<a class="btn primary" href="#donate">Be a Part of the Change</a></div>
+</div></section>
 
-<footer>
-  <div class="container footer-row">
-    <div><strong>Soul Seva</strong><br>Serving with compassion.</div>
-    <div>© 2026 Soul Seva. All rights reserved.</div>
-  </div>
-</footer>
+<section class="donate" id="donate"><div class="container">
+<div class="head"><h2>Support Soul Seva</h2><p>Your support can help us continue our service. Payment details can be added here whenever you are ready.</p></div>
+<div class="donate-box"><h3>Donate Now</h3><div class="placeholder">💳<br><strong>UPI / Razorpay Payment Area</strong><br>We will connect your payment link here later.</div></div>
+</div></section>
 
-</body>
-</html>
+<section id="contact"><div class="container">
+<div class="head"><h2>Get in Touch</h2><p>For volunteering, collaboration or general enquiries.</p></div>
+<div class="contact-grid"><div class="contact"><h3>📞 Phone</h3><p>Details coming soon.</p></div><div class="contact"><h3>✉️ Email</h3><p>Details coming soon.</p></div></div>
+</div></section>
+
+<footer><div class="container foot"><div><strong>Soul Seva Foundation</strong><br>Serve with Soul, Change a Life.</div><div>© 2026 Soul Seva Foundation. All rights reserved.</div></div></footer>
+</body></html>
